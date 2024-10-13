@@ -2,7 +2,7 @@ const loader = document.createElement("img");
 loader.setAttribute("class", "loader");
 loader.src = "./loader.gif";
 
-const key = "f2f1c318efbb5d9f0726fe4597d9ebd5";
+const key = "50fa392e3bb9c6c35235429ac5eea1ad";
 
 const searchInput = document.querySelector(".search_input");
 const searchBtn = document.querySelector(".search-btn");
@@ -22,7 +22,7 @@ async function fetchData() {
         const city = searchInput.value;
         searchInput.value = "";
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`)
-        .then(res => res.json())
+        then(res => res.json())
         .then(data => {
             if(!data.name ) {
                 alert("Please enter a valid city name");

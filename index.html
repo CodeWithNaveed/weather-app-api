@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
     <h1 class="title">Weather App</h1>
 
-    <div class="search-box">
-        <input  class="search_input" type="text" placeholder="Enter city name">
-        <button class="search-btn">Search</button>
-    </div>
+    <div class="container">
 
-    <div class="weather">
-        <h2 class="city_name"></h2>
-        <h1 class="temp"></h1>
-        <div class="flex">
-            <img src="" class="icon"/>
-            <div class="description"></div>
+        <div class="search-box">
+            <input class="search_input" type="text" placeholder="Enter city name">
+            <button class="search-btn">Search</button>
         </div>
-        <div class="humidity"></div>
-        <div class="wind-speed"></div>
-    </div>
 
+        <div class="weather">
+            <h2 class="city_name"></h2>
+            <h1 class="temp"></h1>
+            <div class="flex">
+                <img src="" class="icon" />
+                <div class="description"></div>
+            </div>
+            <div class="humidity"></div>
+            <div class="wind-speed"></div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
